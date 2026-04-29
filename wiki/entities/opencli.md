@@ -1,10 +1,10 @@
 ---
 title: OpenCLI
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 type: entity
 tags: [ai-tool, automation, coding]
-sources: [conversation/2026-04-28]
+sources: [conversation/2026-04-28, conversation/2026-04-29]
 ---
 
 # OpenCLI
@@ -54,6 +54,29 @@ opencli bilibili history     # 浏览历史
 | LLM 消耗 | 零 | 低 |
 | 扩展性 | 适配器开发 | 任意 JS 执行 |
 | 适合场景 | 常见站点快速操作 | 复杂页面交互 |
+
+## B站评论 API（绕过 Shadow DOM）
+
+B站评论区使用 `<bili-comments>` Web Component（Shadow DOM），直接 DOM 操作无法触及内部元素。
+
+### 方案：opencli browser eval + API POST
+
+```bash
+# 1. 通过 opencli browser eval 提取 CSRF token
+opencli browser eval "document.cookie.match(/bili_jct=([^;]+)/)?.[1]"
+
+# 2. POST 到评论 API
+curl -X POST 'https://api.bilibili.com/x/v2/reply/add' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d "type=1&oid={aid}&message={评论内容}&bili_jct={csrf_token}"
+```
+
+### 关键点
+
+- **CSRF Token**：`bili_jct` cookie 值，B站所有写操作都需要
+- **Shadow DOM 不可操作**：`<bili-comments>` 组件隔离了内部 DOM，`document.querySelector` 无法穿透
+- **opencli 优势**：复用 Chrome 登录态，能直接读取已登录用户的 cookie
+- **`type` 参数**：1=视频评论，11=动态评论，2=话题评论
 
 ## 踩坑
 
