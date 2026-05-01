@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-04-30 | Total pages: 26
+> Last updated: 2026-05-01 | Total pages: 27
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块
@@ -31,6 +31,7 @@
 - [[wechat-ilink-token]] — 微信 iLink Token 约7天过期机制及刷新方法
 - [[deepseek-protocol-compatibility]] — DeepSeek API 的 Anthropic/OpenAI 双协议兼容性陷阱（含三重根因与完整修复）
 - [[feishu-bot-configuration]] — 飞书Bot白名单配置陷阱，空白名单=静默丢弃所有消息
+- [[wechat-article-scoring]] — 公众号文章八维度质量评分体系，≥90分A级方可发布
 
 ## Comparisons
 - [[wechat-image-generation-comparison]] — 免费AI配图服务对比：Pollinations vs xinghe-image等

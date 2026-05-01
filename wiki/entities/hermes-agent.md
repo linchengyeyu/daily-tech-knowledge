@@ -4,7 +4,7 @@ created: 2026-04-22
 updated: 2026-04-30
 type: entity
 tags: [ai-tool, agent, automation]
-sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29]
+sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30]
 ---
 
 # Hermes Agent
@@ -94,6 +94,46 @@ python3 -c "import yaml; c=yaml.safe_load(open('/Users/makermz/.hermes/config.ya
 2. 确认 `base_url` 和 `api_mode` 匹配（详见 [[deepseek-protocol-compatibility]]）
 3. 确认 Cron 环境能访问网络（`ping 8.8.8.8`）
 4. 检查 `~/.hermes/logs/` 下的最近日志
+
+## v0.11.0 升级记录（2026-04-30）
+
+### 升级概况
+
+从 v0.10.0 升级到 v0.11.0（上游 tag `v2026.4.23`，领先 1614 commits）。升级过程中遇到 **5 个 merge conflicts**：
+
+| 文件 | 冲突原因 |
+|------|---------|
+| `agent/anthropic_adapter.py` | DeepSeek `_is_deepseek_anthropic_endpoint` 检测逻辑变更 |
+| `gateway/run.py` | `resolve_display_context_length` 实现方式变化 |
+| `hermes_cli/models.py` | 模型验证逻辑重构 |
+| `run_agent.py` | 配置读取结构变更 |
+| `tests/hermes_cli/test_model_validation.py` | 测试用例更新 |
+
+### 上游吸收的变更
+
+以下自定义补丁已被上游集成，无需重新手动应用：
+
+- **DeepSeek `_is_deepseek_anthropic_endpoint` 检测**：上游新增了对 DeepSeek Anthropic 兼容端点的自动识别
+- **`reasoning_content` 兼容性**：上游处理了 reasoning_content 字段的兼容逻辑
+- **Gateway `resolve_display_context_length`**：上游重构了 context length 的显示解析方式
+
+### 需要重新应用的自定义补丁
+
+上游未集成、需手动恢复的本地定制：
+
+1. **`run_agent.py` — `max_tokens` 配置化**
+   - 从 `config.yaml` 的模型配置中读取 `max_tokens`
+   - 支持路径：`custom_providers[].models.<id>.max_tokens`
+
+2. **`hermes_cli/models.py` — 自定义 Provider 归一化**
+   - `custom:DeepSeek` 格式的 named custom provider 需要归一化处理
+   - 确保自定义 provider 名称在 CLI 验证中被正确识别
+
+### 经验教训
+
+- **先 diff 再打补丁**：升级时上游可能已经集成了之前的自定义修改，盲目重新应用会导致重复或冲突。务必先用 `git diff` / `git log` 确认上游已有哪些变更。
+- **Cron 环境变量问题（再次确认）**：Cron 会话无法访问 shell profile 中的环境变量，`AISTUDIO_API_KEY` 等需要 `source ~/.zshrc` 或在 config.yaml 中直接配置。详见 [[deepseek-protocol-compatibility]]。
+- **`delegate_task` 的中断风险**：delegate task 可以被新用户消息中断，导致所有工作进行丢失。适用于批量工作，不适合作为关键单点任务的依赖。
 
 ## 相关
 

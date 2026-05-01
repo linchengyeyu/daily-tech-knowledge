@@ -1,7 +1,7 @@
 ---
 title: 微信公众号写作工具链
 created: 2026-04-24
-updated: 2026-04-26
+updated: 2026-05-01
 type: concept
 tags: [ai-tool, automation, agent, best-practice]
 sources: []
@@ -158,3 +158,23 @@ python3 ~/.hermes/skills/creative/xinghe-image/scripts/generate.py \
 - 复杂 JSON payload 不要用 `node -e` 内联，写到文件再执行
 - deepseek-v4-pro 的 thinking mode API 不兼容：要求 `thinking` 内容回传，当前架构未处理
 - 50步生图模式不稳定（60/90/120s超时均失败），统一用8步Turbo模式
+
+## 文章质量评分（2026-04-30验证）
+
+> 详细标准见 [[wechat-article-scoring]]
+
+使用 DeepSeek API 对文章按八维度自动打分，总分 ≥ 90（A级）才允许上传草稿箱。
+
+首次自动化评分实测（2026-04-30）：文章得分 **88/100**，距 A 级差 2 分，主要扣分在「互动引导」和「标题与封面」两个维度。修改后重新评分达标再发布。
+
+## bm.md 流程图上传经验
+
+流程图/图表（Mermaid 等）不能直接在 Markdown 中内联交给 bm.md 渲染——微信不支持外部 JS/CDN。
+
+**正确做法：**
+1. 先将流程图/图表渲染为静态图片（本地 Mermaid CLI 或在线工具）
+2. 通过微信 `media/uploadimg` API 将图片上传到公众号素材库，获取微信返回的图片 URL
+3. 将该 URL 以 `![描述](微信图片URL)` 的形式嵌入 Markdown 中
+4. 再将包含微信图片 URL 的 Markdown 交给 bm.md 渲染
+
+这样 bm.md 渲染出的 HTML 中，图片已经是微信域名的 URL，在公众号内可正常显示。
