@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-05-01 | Total pages: 27
+> Last updated: 2026-05-02 | Total pages: 27
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块

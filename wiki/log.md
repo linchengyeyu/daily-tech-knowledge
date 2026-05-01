@@ -153,3 +153,17 @@
   - concepts/wechat-publishing-toolchain.md — 新增文章质量评分章节、bm.md流程图上传经验
   - index.md — 新增1条目，Total pages: 26→27
 - 关键知识点：Hermes v0.11.0升级与合并冲突解决策略、公众号文章评分门禁、delegate_task中断风险
+
+## [2026-05-02] ingest | 每日知识回收（回收 2026-05-01 对话）
+- 回收 5 个会话（Cron×3、WeChat×2）
+- 主要话题：
+  1. 6AM知识库Cron任务因`cfg_get` ImportError失败，手动重触发执行（Cron 10:45AM）
+  2. 检查定时任务状态，发现两个Cron同时失败，排查agent.log定位根因（WeChat 10:03AM）
+  3. 对AI世界日报文章进行八维度评分（88.5分B+级），用户修正发布流程（WeChat 10:33AM）
+  4. 每日知识整理处理4/30数据，Wiki 26→27页（Cron 10:45AM）
+- 更新页面：
+  - entities/hermes-agent.md — 新增Cron `cfg_get` ImportError事件记录（根因分析、解决方案、经验教训）
+  - concepts/wechat-article-scoring.md — 新增用户修正版评分流程（用户审核不可跳过）、实战评分案例
+  - entities/ai-world-digest.md — 新增质量评估记录（88.5分B+级）
+- 更新：index.md（更新日期），log.md（本条记录）
+- 关键知识点：Gateway重启后cfg_get函数丢失导致Cron全面瘫痪、公众号文章发布流程必须有用户审核环节
