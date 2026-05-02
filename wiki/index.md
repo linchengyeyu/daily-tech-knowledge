@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-05-02 | Total pages: 27
+> Last updated: 2026-05-03 | Total pages: 30
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块
@@ -22,6 +22,8 @@
 - [[opencli]] — 通用CLI Hub，90+网站适配器，零LLM消耗，复用Chrome登录态，含B站评论API
 - [[follow-builders]] — AI Builder追踪工具，25个X账号+6播客+2博客聚合
 - [[ai-world-digest]] — AI世界日报自动聚合管线，4源采集，Cron 9am每日执行
+- [[claude-security]] — Anthropic AI代码安全审计工具，基于Opus 4.7，无需API即可审计代码仓库
+- [[open-design]] — 开源AI设计工具（nexu-io），71种品牌级设计系统，多Agent兼容
 
 ## Concepts
 - [[cloudflare-tunnel]] — Cloudflare 免费内网穿透方案，含国内加速配置
@@ -32,6 +34,7 @@
 - [[deepseek-protocol-compatibility]] — DeepSeek API 的 Anthropic/OpenAI 双协议兼容性陷阱（含三重根因与完整修复）
 - [[feishu-bot-configuration]] — 飞书Bot白名单配置陷阱，空白名单=静默丢弃所有消息
 - [[wechat-article-scoring]] — 公众号文章八维度质量评分体系，≥90分A级方可发布
+- [[karpathy-llm-paradigms]] — Karpathy 在红杉Ascent大会分享的LLM三大新范式（.md技能/非结构化计算/菜单吞噬）
 
 ## Comparisons
 - [[wechat-image-generation-comparison]] — 免费AI配图服务对比：Pollinations vs xinghe-image等

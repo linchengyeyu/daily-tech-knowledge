@@ -167,3 +167,17 @@
   - entities/ai-world-digest.md — 新增质量评估记录（88.5分B+级）
 - 更新：index.md（更新日期），log.md（本条记录）
 - 关键知识点：Gateway重启后cfg_get函数丢失导致Cron全面瘫痪、公众号文章发布流程必须有用户审核环节
+
+## [2026-05-03] ingest | 每日知识回收（回收 2026-05-02 对话）
+- 回收 2 个 Cron 会话（6AM知识库 + 9AM AI世界日报）
+- 主要话题：
+  1. 6AM知识库Cron成功回收5/1对话，更新Wiki 27页→30页，GitHub同步，公众号草稿上传（Cron 6:00AM）
+  2. AI世界日报5/2刊采集：Codex升级、Claude Security公测、Open Design开源、Karpathy三大范式（Cron 9:00AM）
+- 新建页面：
+  - entities/claude-security.md — Anthropic AI代码安全审计工具，基于Opus 4.7，无需API
+  - entities/open-design.md — 开源AI设计工具（nexu-io），11.8k⭐，71种品牌级设计系统
+  - concepts/karpathy-llm-paradigms.md — Karpathy在红杉Ascent大会分享LLM三大新范式
+- 更新页面：
+  - entities/ai-world-digest.md — 新增5/2采集记录
+  - index.md — 新增3条目，Total pages: 27→30
+- 关键知识点：Claude Security发布、Open Design开源设计工具、Karpathy LLM三大范式（.md替代.sh/非结构化计算/菜单应用吞噬）、Codex非编码能力扩展

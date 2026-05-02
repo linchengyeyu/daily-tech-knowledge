@@ -1,10 +1,10 @@
 ---
 title: Hermes Agent
 created: 2026-04-22
-updated: 2026-04-30
+updated: 2026-05-02
 type: entity
 tags: [ai-tool, agent, automation]
-sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30]
+sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01]
 ---
 
 # Hermes Agent
@@ -134,6 +134,35 @@ python3 -c "import yaml; c=yaml.safe_load(open('/Users/makermz/.hermes/config.ya
 - **先 diff 再打补丁**：升级时上游可能已经集成了之前的自定义修改，盲目重新应用会导致重复或冲突。务必先用 `git diff` / `git log` 确认上游已有哪些变更。
 - **Cron 环境变量问题（再次确认）**：Cron 会话无法访问 shell profile 中的环境变量，`AISTUDIO_API_KEY` 等需要 `source ~/.zshrc` 或在 config.yaml 中直接配置。详见 [[deepseek-protocol-compatibility]]。
 - **`delegate_task` 的中断风险**：delegate task 可以被新用户消息中断，导致所有工作进行丢失。适用于批量工作，不适合作为关键单点任务的依赖。
+
+## Cron `cfg_get` ImportError（2026-05-01）
+
+### 事件
+
+2026年5月1日早6:00，两个 Cron 任务（每日知识库入库 `66ccdc6df1c5` 和 AI世界日报 `efacc6ea4e99`）同时失败。
+
+**错误信息**：
+```
+Error processing job 66ccdc6df1c5: cannot import name 'cfg_get' from 'hermes_cli.config'
+Error processing job efacc6ea4e99: cannot import name 'cfg_get' from 'hermes_cli.config'
+```
+
+### 根因
+
+- 4月30日晚上 gateway 重启后，加载的代码版本中 `cfg_get` 函数被移除或重命名
+- `hermes_cli/config.py` 中不再包含 `cfg_get` 导出
+- 所有依赖该函数的 cron 任务和 chat 会话均受影响
+
+### 解决方案
+
+- **重启 gateway** 后恢复正常（`hermes gateway restart`）
+- 重启后加载了修正版本的代码
+
+### 经验教训
+
+- Gateway 重启后应验证 cron 任务是否正常执行（可在重启后手动触发一次）
+- 代码升级后如果删除/重命名了导出的函数，需同步更新所有引用方
+- 可通过 `~/.hermes/logs/agent.log` 查看详细错误信息定位问题
 
 ## 相关
 
