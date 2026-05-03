@@ -181,3 +181,37 @@
   - entities/ai-world-digest.md — 新增5/2采集记录
   - index.md — 新增3条目，Total pages: 27→30
 - 关键知识点：Claude Security发布、Open Design开源设计工具、Karpathy LLM三大范式（.md替代.sh/非结构化计算/菜单应用吞噬）、Codex非编码能力扩展
+
+## [2026-05-03] ingest | 逛逛GitHub「快瞧瞧 4 月 GitHub 上哪些开源项目最火火火火？」
+- Raw source: raw/articles/guangguang-github-april-hot-2026.md
+- 来源：微信公众号「逛逛GitHub」4月热门开源项目汇总（8个详细介绍 + 8个简短提及）
+- 新建页面：
+  - entities/rtk.md — Rust写的CLI代理，为AI Coding压缩命令输出省80-90% token
+  - entities/archon.md — AI编码工作流引擎，YAML定义确定性流程
+  - entities/ai-edge-gallery.md — Google端侧AI展示应用，手机离线跑大模型
+  - entities/ppt-master.md — AI生成可编辑PPTX，22个示例309页
+  - entities/litert-lm.md — Google端侧大模型推理框架，全平台GPU/NPU加速
+  - entities/matt-pocock-skills.md — Claude Code Skills合集，针对AI编程4个失败模式
+- 更新页面：
+  - entities/generic-agent.md — Stars更新（6.9k→8.4k），新增来源引用
+  - index.md — 新增6条目，Total pages: 30→36
+- 关键知识点：RTK省token方案（压缩命令输出）、Archon确定性AI编码流程、Google端侧AI双产品（Gallery+LiteRT-LM）、PPT Master原生PPTX生成、Matt Pocock Skills的4个失败模式框架
+
+## [2026-05-04] ingest | 每日知识回收（回收 2026-05-03 对话）
+- 回收 3 个会话的知识点（Feishu PPT Master + ACP Open Design SafeTech + AI世界日报 5/3刊）
+- 主要话题：
+  1. PPT Master 环境搭建：pycairo 构建修复（pkgconf）、UV venv Python 3.13、Hermes skill 创建
+  2. Open Design SafeTech 暗色主题落地页：CSS 变量暗色方案、accent budget 规则、honest omission 原则
+  3. AI世界日报 5/3 热门项目：VS Code Copilot Co-Author 争议、mike 法律 AI、whatcable USB-C、软著生成器等
+- 新建页面：
+  - entities/dictionary-of-ai-coding.md — mattpocock AI编程术语词典，677⭐
+  - entities/software-copyright-skill.md — 软著申请生成器，636⭐
+  - entities/whatcable.md — macOS USB-C线缆测试工具，1258⭐
+  - entities/mike-legal-ai.md — 开源AI法律平台，1413⭐
+  - concepts/vscode-copilot-coauthor.md — VS Code Copilot 自动 Co-Authored-by 争议，682pts HN
+  - concepts/llm-refusal-direction.md — LLM拒绝行为单一方向控制研究，88pts HN
+- 更新页面：
+  - entities/ppt-master.md — 新增环境搭建记录（pycairo/pkgconf修复、UV venv路径、核心依赖表、生成管线、v2.5.0特性）
+  - entities/open-design.md — 新增暗色主题技术方案（CSS变量映射、accent budget、honest omission、P0 checklist、5-dim critique）
+  - index.md — 新增6条目，Total pages: 36→43
+- 关键知识点：pycairo构建需pkgconf、PPT Master八项确认BLOCKING管线、Open Design暗色6变量方案、accent每屏≤2次、LLM拒绝行为单一方向控制、Copilot虚假归因争议

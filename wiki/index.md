@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-05-03 | Total pages: 30
+> Last updated: 2026-05-04 | Total pages: 43
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块
@@ -23,7 +23,17 @@
 - [[follow-builders]] — AI Builder追踪工具，25个X账号+6播客+2博客聚合
 - [[ai-world-digest]] — AI世界日报自动聚合管线，4源采集，Cron 9am每日执行
 - [[claude-security]] — Anthropic AI代码安全审计工具，基于Opus 4.7，无需API即可审计代码仓库
-- [[open-design]] — 开源AI设计工具（nexu-io），71种品牌级设计系统，多Agent兼容
+- [[open-design]] — 开源AI设计工具（nexu-io），71种品牌级设计系统，暗色主题方法论
+- [[rtk]] — Rust写的CLI代理工具，为AI Coding工具压缩命令输出，省80-90% token
+- [[archon]] — AI编码工作流引擎，YAML定义确定性流程，从Python迁移到TypeScript
+- [[ai-edge-gallery]] — Google端侧AI展示应用，手机离线跑大模型，支持Gemma 4
+- [[ppt-master]] — AI生成真正可编辑的PPTX文件，含环境搭建记录和完整管线
+- [[litert-lm]] — Google端侧大模型推理框架，全平台GPU/NPU加速
+- [[matt-pocock-skills]] — TypeScript大佬的Claude Code Skills合集，针对AI编程4个失败模式
+- [[dictionary-of-ai-coding]] — mattpocock的AI编程术语词典，677⭐，用平实英语解释AI编程行话
+- [[software-copyright-skill]] — 开源软著申请生成器，636⭐，读取项目代码自动生成.docx申请材料
+- [[whatcable]] — macOS菜单栏USB-C线缆测试工具，1258⭐，解决线缆能力混淆痛点
+- [[mike-legal-ai]] — 开源AI法律平台，1413⭐，降低法律服务技术门槛
 
 ## Concepts
 - [[cloudflare-tunnel]] — Cloudflare 免费内网穿透方案，含国内加速配置
@@ -35,6 +45,8 @@
 - [[feishu-bot-configuration]] — 飞书Bot白名单配置陷阱，空白名单=静默丢弃所有消息
 - [[wechat-article-scoring]] — 公众号文章八维度质量评分体系，≥90分A级方可发布
 - [[karpathy-llm-paradigms]] — Karpathy 在红杉Ascent大会分享的LLM三大新范式（.md技能/非结构化计算/菜单吞噬）
+- [[vscode-copilot-coauthor]] — VS Code自动添加Copilot Co-Authored-by争议，682pts HN，AI归因问题
+- [[llm-refusal-direction]] — LLM拒绝行为由单一表征方向控制的研究发现，AI安全/对齐研究
 
 ## Comparisons
 - [[wechat-image-generation-comparison]] — 免费AI配图服务对比：Pollinations vs xinghe-image等
