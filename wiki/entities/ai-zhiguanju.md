@@ -1,13 +1,14 @@
 ---
 title: AI智管局
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-05
 type: entity
 tags:
   - project-doc
   - product-design
   - ai-tool
-sources: []
+  - user-growth
+sources: [conversation/2026-05-04]
 ---
 
 # AI智管局
@@ -47,3 +48,34 @@ sources: []
 
 ### 配图服务对比
 详见 [[wechat-image-generation-comparison]]
+
+## 品牌定位升级（2026-05-04）
+
+### 「AI工具质检局」—— 不泛泛介绍AI工具，而是实测 + 对比 + 避坑
+
+市场上AI工具宣传多但质量参差不齐，AI智管局定位为"AI质检员"，提供实测数据和客观评价。
+
+### 全平台矩阵
+
+详见 [[multi-platform-content-strategy]]：
+
+| 平台 | 形式 | 自动化程度 |
+|------|------|-----------|
+| 公众号 | 深度长文 | 全自动上传草稿 |
+| 抖音 | 竖版短视频30-60s | [[opencli]] 可发 |
+| 小红书 | 图文6-9张卡片 | [[opencli]] 可发 |
+| 知乎 | 回答+专栏 | [[opencli]] 可发 |
+| B站 | 竖版短视频 | 需手动 |
+| 快手 | 竖版短视频 | 需手动 |
+
+### 视频制作
+
+- 使用 [[remotion]] 程序化生成竖版短视频（TTS配音+字幕+动画）
+- 四种视频模板：对比横评、踩坑实录、清单推荐、实测教程
+
+### 一周涨粉100人计划
+
+- 方案文件：`/Users/makermz/.hermes/workspace/ai-zhiguanju-growth-plan.md`
+- 目标：一周内涨粉100人（微信封闭生态中极度困难）
+- 发布节奏：Agent写好→上传草稿箱→用户每天下午4-6点审核发布
+- 7篇选题覆盖：AI横评、免费工具、AI做PPT、AI视频对比、Agent评测、数据对比、年度红黑榜

@@ -1,10 +1,10 @@
 ---
 title: Hermes Agent
 created: 2026-04-22
-updated: 2026-05-02
+updated: 2026-05-05
 type: entity
 tags: [ai-tool, agent, automation]
-sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01]
+sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01, conversation/2026-05-04]
 ---
 
 # Hermes Agent
@@ -172,3 +172,16 @@ Error processing job efacc6ea4e99: cannot import name 'cfg_get' from 'hermes_cli
 - [[bilibili-subtitle-extraction]] — Playwright 浏览器自动化的实际应用案例
 - [[deepseek-protocol-compatibility]] — DeepSeek 回退模型协议兼容性
 - [[ai-world-digest]] — Hermes Cron 任务案例
+
+## 记忆方案调研（2026-05-04）
+
+调研了 [[mempalace]] 作为可选的增强记忆方案：
+
+- **当前方案**：[[hindsight-memory]]（Hermes 内置）+ session_search → 覆盖日常场景
+- **MemPalace 优势**：全量逐字存储、语义搜索 R@5 96.6%、MCP 集成（29 个工具）、多 AI 工具共享记忆
+- **结论**：暂时收藏备用，待记忆需求超出 Hindsight 能力时再考虑切换
+
+## 安全生产工具链（2026-05-04）
+
+开发了 [[hseffyun-spider]]（ABC 安全文件爬虫），基于 Playwright-CLI 批量采集 hseffyun.com 文档。标志着 Hermes 工具链从 AI/技术领域扩展到安全生产领域。
+

@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-05-04 | Total pages: 43
+> Last updated: 2026-05-05 | Total pages: 48
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块
@@ -34,6 +34,10 @@
 - [[software-copyright-skill]] — 开源软著申请生成器，636⭐，读取项目代码自动生成.docx申请材料
 - [[whatcable]] — macOS菜单栏USB-C线缆测试工具，1258⭐，解决线缆能力混淆痛点
 - [[mike-legal-ai]] — 开源AI法律平台，1413⭐，降低法律服务技术门槛
+- [[mempalace]] — 本地优先的开源AI记忆系统，5万⭐，MIT协议，宫殿式语义搜索
+- [[hseffyun-spider]] — ABC安全文件爬虫，基于Playwright-CLI批量采集hseffyun.com文档
+- [[deepclaude]] — DeepSeek V4 Pro + Claude Code Agent组合方案，成本降低17倍
+- [[ollama]] — 本地LLM运行工具，v0.23.0新增Claude Desktop集成
 
 ## Concepts
 - [[cloudflare-tunnel]] — Cloudflare 免费内网穿透方案，含国内加速配置
@@ -47,6 +51,8 @@
 - [[karpathy-llm-paradigms]] — Karpathy 在红杉Ascent大会分享的LLM三大新范式（.md技能/非结构化计算/菜单吞噬）
 - [[vscode-copilot-coauthor]] — VS Code自动添加Copilot Co-Authored-by争议，682pts HN，AI归因问题
 - [[llm-refusal-direction]] — LLM拒绝行为由单一表征方向控制的研究发现，AI安全/对齐研究
+- [[deepseek-fallback-best-practice]] — DeepSeek Fallback 配置最佳实践：GLM主力+DeepSeek备用自动切换方案
+- [[multi-platform-content-strategy]] — 全平台内容运营策略：一条内容→六种形态，覆盖公众号/抖音/小红书/知乎/B站/快手
 
 ## Comparisons
 - [[wechat-image-generation-comparison]] — 免费AI配图服务对比：Pollinations vs xinghe-image等

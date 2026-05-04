@@ -1,10 +1,10 @@
 ---
 title: GenericAgent
 created: 2026-04-26
-updated: 2026-04-28
+updated: 2026-05-03
 type: entity
 tags: [ai-tool, agent, automation, llm]
-sources: []
+sources: [raw/articles/guangguang-github-april-hot-2026.md]
 ---
 
 # GenericAgent
@@ -13,7 +13,7 @@ sources: []
 
 ## 基本信息
 
-- GitHub: `lsdefine/GenericAgent`（6.9k Stars）
+- GitHub: `lsdefine/GenericAgent`（8.4k Stars，2026-05）
 - 协议: MIT
 - 核心代码量: ~3K 行 Python
 - arXiv 论文: `2604.17091`

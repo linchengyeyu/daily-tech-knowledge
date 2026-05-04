@@ -1,7 +1,7 @@
 ---
 title: 微信公众号写作工具链
 created: 2026-04-24
-updated: 2026-05-01
+updated: 2026-05-05
 type: concept
 tags: [ai-tool, automation, agent, best-practice]
 sources: []
@@ -178,3 +178,27 @@ python3 ~/.hermes/skills/creative/xinghe-image/scripts/generate.py \
 4. 再将包含微信图片 URL 的 Markdown 交给 bm.md 渲染
 
 这样 bm.md 渲染出的 HTML 中，图片已经是微信域名的 URL，在公众号内可正常显示。
+
+## DeepSeek Fallback 教程文章（2026-05-04）
+
+撰写了一篇关于 Hermes + DeepSeek fallback 配置的教程文章，准备发布到「[[ai-zhiguanju]]」。
+
+### 文章概要
+
+- **标题**：「AI助手突然罢工了怎么办？我用10分钟搭了一套自动切换方案」
+- **核心内容**：GLM-5.1 → DeepSeek V4 Flash 自动 fallback 配置教程
+- **结构**：问题定义→架构设计→3步配置→三个必踩的坑→进阶(thinking blocks)→实测数据→总结
+- **文件位置**：`~/article-fallback-tutorial.md`
+
+### 写作亮点
+
+- 口语化叙事：「你有没有遇到过这种情况——正在用AI助手写代码，突然返回一个错误」
+- 对比表格：4种应对方案（等/轮换/付费/自动切换）横向对比
+- 实测数据：一周运行，fallback 成功率 100%，周费用 <¥0.5
+- 三个坑独立成节，每个都有❌/✅对照
+
+### 技术要点引用
+
+- Fallback 最佳实践详见 [[deepseek-fallback-best-practice]]
+- 协议兼容性陷阱详见 [[deepseek-protocol-compatibility]]
+

@@ -215,3 +215,46 @@
   - entities/open-design.md — 新增暗色主题技术方案（CSS变量映射、accent budget、honest omission、P0 checklist、5-dim critique）
   - index.md — 新增6条目，Total pages: 36→43
 - 关键知识点：pycairo构建需pkgconf、PPT Master八项确认BLOCKING管线、Open Design暗色6变量方案、accent每屏≤2次、LLM拒绝行为单一方向控制、Copilot虚假归因争议
+
+## [2026-05-05] ingest | 每日知识回收（回收 2026-05-04 对话）
+- 回收 2026-05-04 的多个对话知识点
+- 主要话题：
+  1. MemPalace 开源 AI 记忆系统调研（宫殿式结构、ChromaDB 向量存储、MCP 支持）
+  2. DeepSeek Fallback 教程文章撰写（GLM→DeepSeek 自动切换，三个必踩的坑）
+  3. B站字幕工具全面深度调研（30+项目梳理，五大类分类，AI Agent 集成推荐）
+  4. ABC安全文件爬虫脚本开发（hseffyun_spider.py，Playwright-CLI 采集）
+  5. AI世界日报 5/4 采集（MemPalace 5万⭐等热点）
+- 新建页面：
+  - entities/mempalace.md — 本地优先的开源AI记忆系统，5万⭐，宫殿式语义搜索
+  - entities/hseffyun-spider.md — ABC安全文件爬虫，基于Playwright-CLI批量采集
+  - concepts/deepseek-fallback-best-practice.md — DeepSeek Fallback 配置最佳实践（3步10分钟）
+- 更新页面：
+  - entities/bilibili-subtitle-extraction.md — 新增深度调研（30+项目梳理、五大类分类、AI Agent集成推荐Top3）
+  - concepts/wechat-publishing-toolchain.md — 新增DeepSeek Fallback教程文章写作记录
+  - entities/hermes-agent.md — 新增记忆方案调研（MemPalace vs Hindsight）和安全生产工具链章节
+  - concepts/deepseek-protocol-compatibility.md — 新增fallback最佳实践页面互链
+  - entities/ai-world-digest.md — 新增5/4采集记录
+- 清理：移除 wiki 根目录 MemPalace.md（已迁移至 entities/）
+- 更新：index.md（新增3条目，Total pages: 43→46）
+- 关键知识点：MemPalace宫殿式记忆架构、DeepSeek fallback三个必踩坑（base_url/api_mode/重启）、B站CC字幕API完整文档、hseffyun安全文档批量采集方案
+
+
+## [2026-05-05] ingest | 每日知识回收（回收 2026-05-04 对话）
+- 回收 3 个会话的知识点（Feishu 涨粉方案 + AI世界日报 5/4刊 + 知识库Cron 5/4执行）
+- 主要话题：
+  1. AI智管局一周涨粉100人方案：品牌定位「AI工具质检局」，全平台矩阵（公众号+抖音+小红书+知乎+B站+快手），Remotion生成竖版短视频
+  2. AI世界日报5/4刊：Sam Altman称GPT-5.5 xhigh真香、OpenAI o1急诊诊断67%超越医生、DeepClaude项目降低17倍成本、Ollama v0.23.0支持Claude Desktop
+  3. 知识库Cron 5/4成功回收5/3对话
+- 新建页面：
+  - entities/deepclaude.md — DeepSeek V4 Pro + Claude Code Agent组合，成本降低17倍
+  - entities/ollama.md — 本地LLM运行工具，v0.23.0新增Claude Desktop集成
+  - concepts/multi-platform-content-strategy.md — 全平台内容运营策略（一条内容→六种形态）
+  - entities/mempalace.md — 本地优先AI记忆系统（子agent创建）
+  - entities/hseffyun-spider.md — ABC安全文件爬虫（子agent创建）
+  - concepts/deepseek-fallback-best-practice.md — DeepSeek Fallback配置最佳实践（子agent创建）
+- 更新页面：
+  - entities/ai-zhiguanju.md — 新增品牌定位升级、全平台矩阵、视频制作方案、涨粉计划
+  - entities/ai-world-digest.md — 新增5/4采集记录
+  - entities/remotion.md — 子agent新增深度调研内容
+  - index.md — 新增条目，Total pages: 43→48
+- 关键知识点：AI工具质检局定位、OpenCLI支持抖音/小红书/知乎、Remotion视频模板化、DeepClaude低成本Agent方案、Ollama+Claude Desktop集成

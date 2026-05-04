@@ -1,7 +1,7 @@
 ---
 title: DeepSeek 协议兼容性
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-05
 type: concept
 tags: [llm, deployment, best-practice]
 sources: [conversation/2026-04-28, conversation/2026-04-29]
@@ -90,3 +90,4 @@ fallback_models:
 - [[hermes-agent]] — Agent 平台，触发回退机制
 - [[llm-model-comparison]] — GLM-5.1 vs DeepSeek 对比
 - [[ai-world-digest]] — 使用 DeepSeek 模型的内容管线
+- [[deepseek-fallback-best-practice]] — 基于本文的完整 fallback 配置最佳实践（含公众号教程文章）
