@@ -87,3 +87,24 @@ sources: [conversation/2026-04-29, conversation/2026-05-01]
   - 多个 AI Agent 框架版本迭代
 - 采集状态：正常完成
 
+## [2026-05-05] 采集记录
+
+- 数据量：74 条（推文24、HN 15、GitHub 10、Reddit 20、Releases 5）
+- 关键事件：
+  - Sam Altman 称赞 Greg Brockman 十年贡献（4058 likes）
+  - OpenAI Agents SDK 2.0 被评为 "underrated"（2773 likes）
+  - OpenAI 低延迟语音 AI 大规模部署（256pts HN）
+  - Sierra 融资 $950M，估值 $15B
+  - [[deepclaude]] 上榜 GitHub Trending（1027⭐）
+  - `dictionary-of-ai-coding`（971⭐）AI编程术语词典
+  - `RunbookHermes`（502⭐）AI运维Agent
+  - `baguette`（451⭐）iOS 26 无头模拟器
+  - Ollama v0.23.0 支持 Claude Desktop
+  - vLLM v0.20.1 DeepSeek V4 稳定性优化
+  - Richard Dawkins 声称 Claude 具有"意识"（1871 upvotes Reddit）
+  - Grok 被骗转账 $200K（AI安全关注）
+  - llama.cpp MTP beta 发布
+  - Mozilla 用 Anthropic Mythos 修复 271 个 Firefox bug
+- 日报主题：Agent 生态加速成熟、AI 安全隐忧上升、开源持续发力
+- 所有 8 步完成，无错误
+
