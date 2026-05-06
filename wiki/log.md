@@ -258,3 +258,34 @@
   - entities/remotion.md — 子agent新增深度调研内容
   - index.md — 新增条目，Total pages: 43→48
 - 关键知识点：AI工具质检局定位、OpenCLI支持抖音/小红书/知乎、Remotion视频模板化、DeepClaude低成本Agent方案、Ollama+Claude Desktop集成
+
+## [2026-05-06] ingest | 每日知识回收（回收 2026-05-05 对话）
+- 回收 4 个会话的知识点（每日知识Cron 5/5 + AI世界日报 5/5 + 股市研究 + OpenWebUI/gpt2api部署）
+- 主要话题：
+  1. gpt2api (KleinAI) 部署：将ChatGPT/Grok封装为OpenAI兼容API，Docker Compose部署
+  2. Docker Hub 中国镜像源配置经验（OrbStack代理陷阱）
+  3. OpenWebUI 账户创建踩坑（auth+user双表插入）
+  4. AI世界日报5/5刊：Agent生态成熟、AI安全关注、开源持续发力
+  5. 股市研究：A股4/30收盘、美股5/4 Meta盘后跌7%、港股5/5数据
+- 新建页面：
+  - entities/gpt2api.md — ChatGPT/Grok封装为OpenAI兼容API网关
+  - concepts/docker-china-mirrors.md — Docker Hub中国镜像源配置经验
+- 更新页面：
+  - entities/open-webui.md — 新增账户创建踩坑、WebSocket配置、gpt2api集成
+  - entities/ai-world-digest.md — 新增5/5采集记录（74条数据）
+  - index.md — 新增2条目，Total pages: 48→50
+- 关键知识点：gpt2api私建API网关、OrbStack daemon不走系统VPN、OpenWebUI auth+user双表要求
+
+## [2026-05-07] ingest | 每日知识回收（回收 2026-05-06 对话）
+- 回收 3 个会话的知识点（DeepClaude部署 + AI智管局冷启动 + 每日知识Cron）
+- 主要话题：
+  1. DeepClaude 本地安装部署：aattaran/deepclaude 1329⭐，MIT，安装到 /Volumes/DevSSD/Applications/deepclaude/，配置到 /usr/local/bin/deepclaude
+  2. AI智管局公众号冷启动诊断：定位跑偏/无传播点/单渠道零矩阵三大问题，逛逛GitHub爆款拆解，新方向「普通人能用AI干什么」
+  3. 每日知识Cron前一天执行：Wiki 48→50页
+- 新建页面：
+  - concepts/wechat-content-strategy.md — 公众号冷启动策略与内容运营方法论（对标分析、标题公式7种、逛逛GitHub爆款拆解、排版极简主义）
+- 更新页面：
+  - entities/deepclaude.md — 新增本地部署记录（安装路径、CLI配置、已知bug：Issue#3/不支持图片/MCP不兼容/macOS benchmark兼容性）
+  - entities/ai-zhiguanju.md — 新增冷启动诊断（三大核心问题、逛逛GitHub对标分析、内容方向调整）
+  - index.md — 新增1条目，Total pages: 50→51
+- 关键知识点：DeepClaude环境变量重定向API原理、公众号标题7种公式、逛逛GitHub爆款五步结构、证据型截图vs装饰型截图

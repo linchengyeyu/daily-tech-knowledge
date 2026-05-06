@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-05-05 | Total pages: 48
+> Last updated: 2026-05-07 | Total pages: 51
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块
@@ -38,6 +38,7 @@
 - [[hseffyun-spider]] — ABC安全文件爬虫，基于Playwright-CLI批量采集hseffyun.com文档
 - [[deepclaude]] — DeepSeek V4 Pro + Claude Code Agent组合方案，成本降低17倍
 - [[ollama]] — 本地LLM运行工具，v0.23.0新增Claude Desktop集成
+- [[gpt2api]] — ChatGPT/Grok账户封装为OpenAI兼容API网关，Docker Compose部署
 
 ## Concepts
 - [[cloudflare-tunnel]] — Cloudflare 免费内网穿透方案，含国内加速配置
@@ -53,6 +54,8 @@
 - [[llm-refusal-direction]] — LLM拒绝行为由单一表征方向控制的研究发现，AI安全/对齐研究
 - [[deepseek-fallback-best-practice]] — DeepSeek Fallback 配置最佳实践：GLM主力+DeepSeek备用自动切换方案
 - [[multi-platform-content-strategy]] — 全平台内容运营策略：一条内容→六种形态，覆盖公众号/抖音/小红书/知乎/B站/快手
+- [[docker-china-mirrors]] — Docker Hub 中国镜像源配置经验，OrbStack代理陷阱
+- [[wechat-content-strategy]] — 公众号冷启动策略与内容运营方法论：对标分析、标题公式7种、逛逛GitHub爆款拆解、排版极简主义
 
 ## Comparisons
 - [[wechat-image-generation-comparison]] — 免费AI配图服务对比：Pollinations vs xinghe-image等
