@@ -1,10 +1,10 @@
 ---
 title: Hermes Agent
 created: 2026-04-22
-updated: 2026-05-05
+updated: 2026-05-08
 type: entity
 tags: [ai-tool, agent, automation]
-sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01, conversation/2026-05-04]
+sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01, conversation/2026-05-04, conversation/2026-05-07]
 ---
 
 # Hermes Agent
@@ -184,4 +184,41 @@ Error processing job efacc6ea4e99: cannot import name 'cfg_get' from 'hermes_cli
 ## 安全生产工具链（2026-05-04）
 
 开发了 [[hseffyun-spider]]（ABC 安全文件爬虫），基于 Playwright-CLI 批量采集 hseffyun.com 文档。标志着 Hermes 工具链从 AI/技术领域扩展到安全生产领域。
+
+## SOUL.md 配置（2026-05-07）
+
+已配置 SOUL.md 文件：`/Users/makermz/.hermes/SOUL.md`（4607字节）
+
+- 基于 Tony Simons (@tonysimons_) 的「The 170-Line SOUL.md That Made My Hermes Agent Dangerous」框架定制
+- 核心理念：不给 AI 当"helpful assistant"，而是通过 markdown 定义身份、反对规则、双向问责、自主权边界
+- 4件事需批准才执行：发布、花钱、不可逆操作、修改 SOUL.md
+- 详见 → [[soul-md]]
+
+## 与 Mercury Agent 对比（2026-05-07）
+
+调研了 [[mercury-agent]]（cosmicstack-labs/mercury-agent），一个 Soul-driven 轻量 Agent：
+
+| 维度 | Hermes | Mercury |
+|------|--------|---------|
+| 平台覆盖 | 20+ 平台 | Telegram + CLI |
+| 多 Agent | ✅ 支持 | ❌ |
+| 浏览器自动化 | ✅ Playwright-CLI | ❌ |
+| MCP | ✅ 支持 | ❌ |
+| 结构化记忆 | ❌ 扁平文本 | ✅ 10类型 + SQLite+FTS5 |
+| 权限控制 | 粗（SOUL.md 声明） | 精细（文件级别） |
+
+**结论**：Hermes 在平台覆盖、多 Agent 协作、浏览器自动化方面更强；Mercury 在结构化记忆和权限控制方面更优。
+
+### Hermes 记忆系统局限（对比发现）
+
+- **扁平文本**：MEMORY.md 是纯文本，无结构化分类
+- **手动管理**：需人工维护和清理
+- **字符限制**：当前 98% 使用率（2157/2200 字符），接近上限
+- 详见 [[agent-soul-architecture]] 中的对比分析
+
+## 飞书配对命令
+
+```bash
+hermes pairing approve feishu <code>
+```
 

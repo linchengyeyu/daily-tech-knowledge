@@ -289,3 +289,14 @@
   - entities/ai-zhiguanju.md — 新增冷启动诊断（三大核心问题、逛逛GitHub对标分析、内容方向调整）
   - index.md — 新增1条目，Total pages: 50→51
 - 关键知识点：DeepClaude环境变量重定向API原理、公众号标题7种公式、逛逛GitHub爆款五步结构、证据型截图vs装饰型截图
+
+## [2026-05-08] ingest | 每日知识回收（回收 2026-05-07 对话）
+- 回收知识点：SOUL.md Agent人格定义、Mercury Agent调研、Agent SOUL架构概念
+- 新建页面：
+  - entities/soul-md.md — SOUL.md AI Agent人格定义方法论（Tony Simons 170行框架）
+  - entities/mercury-agent.md — Soul-driven轻量AI Agent，多文件人格定义+结构化记忆
+  - concepts/agent-soul-architecture.md — Agent SOUL架构概念（单文件vs多文件两种路径）
+- 更新页面：
+  - entities/hermes-agent.md — 新增SOUL.md配置记录、Mercury Agent对比、记忆系统局限分析、飞书配对命令
+  - index.md — 新增3条目，Total pages: 51→54
+- 关键知识点：SOUL.md反对义务和双向问责设计、Mercury多文件人格分离vs Hermes单文件大而全、Hermes记忆系统98%使用率逼近上限
