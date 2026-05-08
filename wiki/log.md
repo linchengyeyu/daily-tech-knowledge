@@ -300,3 +300,16 @@
   - entities/hermes-agent.md — 新增SOUL.md配置记录、Mercury Agent对比、记忆系统局限分析、飞书配对命令
   - index.md — 新增3条目，Total pages: 51→54
 - 关键知识点：SOUL.md反对义务和双向问责设计、Mercury多文件人格分离vs Hermes单文件大而全、Hermes记忆系统98%使用率逼近上限
+
+## [2026-05-09] ingest | 每日知识回收 (2026-05-08)
+- 回收 3 个对话会话（飞书公众号写作风格调整×1、AI世界日报5/8×1、每日知识cron×1）
+- 新建页面：
+  - entities/ds4.md — antirez的Mac本地DeepSeek 4 Flash Metal推理引擎
+  - entities/alphaevolve.md — DeepMind的Gemini驱动编码Agent
+  - concepts/wechat-writing-style.md — 公众号写作风格方法论（真人口吻、一句一段、证据型截图、冲突标题）
+- 更新页面：
+  - entities/hermes-agent.md — 新增Claude竞品动态（Dreaming/Outcomes功能、Anthropic 80x增长、HuggingFace恶意软件警告、Chrome隐私声明变更）
+  - entities/ai-zhiguanju.md — 新增写作风格调整进展（第二轮深度分析、文章版本迭代V1→V3、对标差距总结）
+  - concepts/wechat-content-strategy.md — 新增第二轮深度分析（逛逛GitHub本质揭秘、AI智管局vs逛逛GitHub差距对比表、写作风格要点提炼）
+- 更新：index.md（新增3条目，Total pages: 54→57），log.md（本条记录）
+- 关键知识点：逛逛GitHub本质是推荐开源项目+贴截图无实测、Claude Dreaming Agent自学习、Anthropic 80x增长与SpaceX合作、ds4 Metal本地推理、AlphaEvolve Gemini编码Agent

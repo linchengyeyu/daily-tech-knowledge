@@ -1,10 +1,10 @@
 ---
 title: Hermes Agent
 created: 2026-04-22
-updated: 2026-05-08
+updated: 2026-05-09
 type: entity
 tags: [ai-tool, agent, automation]
-sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01, conversation/2026-05-04, conversation/2026-05-07]
+sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01, conversation/2026-05-04, conversation/2026-05-07, conversation/2026-05-08]
 ---
 
 # Hermes Agent
@@ -221,4 +221,33 @@ Error processing job efacc6ea4e99: cannot import name 'cfg_get' from 'hermes_cli
 ```bash
 hermes pairing approve feishu <code>
 ```
+
+## Claude 竞品动态（2026-05-08）
+
+### Claude Dreaming
+
+Anthropic 发布的"Dreaming"功能：Agent 从历史 session 自动学习。无需手动总结，Agent 能自动提取过去对话中的模式和知识，用于后续任务。
+
+### Claude Outcomes
+
+质量评分系统：定义 rubric（评分标准）+ 迭代评分。Agent 在执行任务时自动按照预设 rubric 评分并迭代改进。
+
+### Anthropic 商业进展
+
+- **80x 增长**：Anthropic 实现了 80 倍业务增长
+- **与 SpaceX 合作**：利用 SpaceX 算力基础设施
+- **Mozilla 合作**：用 Anthropic 的 Mythos 工具发现 271 个 Firefox bug
+
+### 其他 AI 安全事件
+
+- **HuggingFace 恶意软件警告**：Open-OSS/privacy-filter 是信息窃取器
+- **Chrome 隐私声明变更**：悄悄移除"on-device AI 不发送数据给 Google"的声明（455pts HN）
+
+### 行业启示
+
+这些动态对 [[ai-zhiguanju]] 和个人 AI 工具链的影响：
+- Agent 自学习（Dreaming）是未来趋势，[[hindsight-memory]] 是 Hermes 生态的对应方案
+- 质量评分（Outcomes）理念与 [[wechat-article-scoring]] 的八维度评分异曲同工
+- 本地推理趋势：[[ds4]]（Metal推理）、[[litert-lm]]（端侧推理）
+
 
