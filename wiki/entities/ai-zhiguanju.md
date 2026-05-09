@@ -1,14 +1,14 @@
 ---
 title: AI智管局
 created: 2026-04-24
-updated: 2026-05-09
+updated: 2026-05-10
 type: entity
 tags:
   - project-doc
   - product-design
   - ai-tool
   - user-growth
-sources: [conversation/2026-05-04, conversation/2026-05-06, conversation/2026-05-08]
+sources: [conversation/2026-05-04, conversation/2026-05-06, conversation/2026-05-08, conversation/2026-05-09]
 ---
 
 # AI智管局
@@ -126,7 +126,25 @@ sources: [conversation/2026-05-04, conversation/2026-05-06, conversation/2026-05
 
 | 维度 | 旧版 | 目标 |
 |------|------|------|
-| 语气 | AI腔 | 真人口吻 |
-| 排版 | 3-5句一段 | 一句一段 |
-| 图片 | 装饰性 | 证据型截图 |
-| 标题 | 平淡 | 数字+冲突+悬念 |
+|| 语气 | AI腔 | 真人口吻 |
+|| 排版 | 3-5句一段 | 一句一段 |
+|| 图片 | 装饰性 | 证据型截图 |
+|| 标题 | 平淡 | 数字+冲突+悬念 |
+
+## yao-open-prompts 文章与自动回复配置（2026-05-09）
+
+### 文章发布
+
+- 基于 [[yao-open-prompts]] 项目撰写公众号文章
+- 文章已上传至草稿箱，等待审核发布
+- 方向：向AI小白推荐优质中文提示词资源库
+
+### 公众号自动回复配置
+
+详见 [[wechat-auto-reply]]
+
+- 配置路径：公众号后台 → 内容与互动 → 自动回复
+- 计划关键词：「AI工具」→ 回复 GitHub 仓库链接
+- 仓库地址：https://github.com/linchengyeyu/ai-toolkit
+- 仓库状态：已创建（2026-05-06），包含4个文件
+- 目的：文章引流→用户回复关键词→获取资料→形成关注闭环

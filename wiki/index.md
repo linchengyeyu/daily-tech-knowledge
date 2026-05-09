@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-05-09 | Total pages: 57
+> Last updated: 2026-05-10 | Total pages: 59
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块
@@ -43,6 +43,7 @@
 - [[mercury-agent]] — Soul-driven轻量AI Agent，多文件人格定义，结构化记忆（10类型SQLite+FTS5）
 - [[ds4]] — antirez（Redis创造者）的Mac本地DeepSeek 4 Flash Metal推理引擎
 - [[alphaevolve]] — DeepMind的Gemini驱动编码Agent
+- [[yao-open-prompts]] — 中文AI提示词库（yaojingang），1392⭐，116个提示词覆盖9大分类，元提示词系统
 
 ## Concepts
 - [[cloudflare-tunnel]] — Cloudflare 免费内网穿透方案，含国内加速配置
@@ -62,6 +63,7 @@
 - [[wechat-content-strategy]] — 公众号冷启动策略与内容运营方法论：对标分析、标题公式7种、逛逛GitHub爆款拆解、排版极简主义
 - [[agent-soul-architecture]] — Agent SOUL架构概念：通过用户可编辑markdown定义AI人格，单文件vs多文件两种路径
 - [[wechat-writing-style]] — 公众号写作风格方法论：真人口吻、一句一段、证据型截图、冲突标题
+- [[wechat-auto-reply]] — 公众号关键词自动回复配置：关键词引流+GitHub仓库做资料下载
 
 ## Comparisons
 - [[wechat-image-generation-comparison]] — 免费AI配图服务对比：Pollinations vs xinghe-image等

@@ -313,3 +313,18 @@
   - concepts/wechat-content-strategy.md — 新增第二轮深度分析（逛逛GitHub本质揭秘、AI智管局vs逛逛GitHub差距对比表、写作风格要点提炼）
 - 更新：index.md（新增3条目，Total pages: 54→57），log.md（本条记录）
 - 关键知识点：逛逛GitHub本质是推荐开源项目+贴截图无实测、Claude Dreaming Agent自学习、Anthropic 80x增长与SpaceX合作、ds4 Metal本地推理、AlphaEvolve Gemini编码Agent
+
+## [2026-05-10] ingest | 每日知识回收（回收 2026-05-09 对话）
+- 回收 3 个会话的知识点（AI世界日报5/9 + 飞书yao-open-prompts调研/公众号文章/自动回复 + 每日知识cron）
+- 主要话题：
+  1. yao-open-prompts 项目调研：中文AI提示词库，1392⭐，116个提示词，9大分类，元提示词系统
+  2. 公众号文章生成：基于yao-open-prompts撰写文章上传草稿箱
+  3. 公众号自动回复配置：关键词「AI工具」→ GitHub仓库链接引流
+  4. ai-toolkit仓库确认：已创建（5月6日），4个文件
+- 新建页面：
+  - entities/yao-open-prompts.md — 中文AI提示词库，1392⭐，116个提示词，元提示词系统
+  - concepts/wechat-auto-reply.md — 公众号关键词自动回复配置经验
+- 更新页面：
+  - entities/ai-zhiguanju.md — 新增yao-open-prompts文章与自动回复配置（2026-05-09）
+  - index.md — 新增2条目，Total pages: 57→59
+- 关键知识点：yao-open-prompts三天爆火说明中文AI提示词需求旺盛、公众号自动回复配合GitHub仓库做资料引流、ai-toolkit仓库作为公众号回复下载站
