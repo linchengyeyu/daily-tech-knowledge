@@ -1,10 +1,10 @@
 ---
 title: gpt2api (KleinAI)
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-11
 type: entity
 tags: [ai-tool, deployment, api-gateway, automation]
-sources: [session 2026-05-05 weixin]
+sources: [session 2026-05-05 weixin, session 2026-05-11 weixin]
 ---
 
 # gpt2api (KleinAI)
@@ -52,8 +52,53 @@ sources: [session 2026-05-05 weixin]
 2. F12 → Application → Cookies
 3. 复制 `__Secure-next-auth.session-token` 的值
 
+## Mock Mode Bug（2026-05-11 发现）
+
+`docker-compose.dev-full.yml` 中 `KLEIN_PROVIDER_GPT: mock` 和 `KLEIN_PROVIDER_GROK: mock` 导致 API 一直返回假数据。
+
+- 即使 `docker-compose.server.yml` 定义为 `real`，dev-full 的 YAML anchor 优先级更高，覆盖了 server 的配置
+- **修复**：改 `docker-compose.dev-full.yml` 第33-34行为 `real`
+
+## Docker 容器代理配置（2026-05-11 发现）
+
+容器默认没有 `HTTP_PROXY` / `HTTPS_PROXY` 环境变量，无法访问 chatgpt.com 等外部服务。
+
+- OrbStack Docker daemon 的代理配置（`~/.orbstack/config/docker.json`）只影响 image pull，**不影响容器运行时**
+- **修复**：在 `x-backend-env` / `x-common-env` 中添加：
+  ```yaml
+  HTTP_PROXY: http://192.168.31.165:7890
+  HTTPS_PROXY: http://192.168.31.165:7890
+  NO_PROXY: localhost,127.0.0.1,mysql,redis,...
+  ```
+- 修复后容器内 `curl chatgpt.com` 从 403 变为 308（成功）
+- 代理来源：[[proxytunnel]] Chrome 扩展监听 `*:7890`
+
+## 端口与网络信息
+
+| 服务 | 端口 |
+|------|------|
+| 用户前端 | 17080 |
+| 管理后台 | 17088 |
+| OpenAI 兼容 API | 17200 |
+| Admin API | 17188 |
+| User API | 17180 |
+| FlareSolverr | 18191 |
+
+- 容器网络：`klein-dev-net`
+
+## Provider Factory 代码位置
+
+- `backend/internal/provider/factory/factory.go`
+
+## 未解决问题
+
+- ChatGPT session token 过期需要重新导入
+- FlareSolverr 返回 502，`grok_cf_refresh` 失败
+- 代理依赖 [[proxytunnel]] Chrome 扩展持续运行，扩展关闭则代理不可用
+
 ## 相关
 
 - [[open-webui]] — Open WebUI 可通过 gpt2api 的 OpenAI 兼容接口接入 ChatGPT
 - [[hermes-agent]] — Hermes 可配置 gpt2api 作为模型后端
 - [[docker-china-mirrors]] — Docker Hub 中国镜像源配置
+- [[proxytunnel]] — ProxyTunnel Chrome 代理扩展，提供容器运行时代理
