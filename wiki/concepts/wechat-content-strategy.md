@@ -1,10 +1,10 @@
 ---
 title: 公众号冷启动策略与内容运营方法论
 created: 2026-05-07
-updated: 2026-05-09
+updated: 2026-05-13
 type: concept
 tags: [content-strategy, wechat, growth, writing]
-sources: [conversation/2026-05-06, conversation/2026-05-08]
+sources: [conversation/2026-05-06, conversation/2026-05-08, session/20260512_203032]
 ---
 
 # 公众号冷启动策略与内容运营方法论
@@ -138,4 +138,19 @@ sources: [conversation/2026-05-06, conversation/2026-05-08]
 - 一句一段（手机阅读结构性要求）
 - 证据型截图（作证不是装饰）
 - 故意引争议（评论区=免费传播）
+
+## 「116个免费中文AI提示词」爆款复盘（2026-05-12）
+
+### 成功要素
+- 基于 [[yao-open-prompts]] 项目撰写，项目本身 3 天爆火自带热点
+- 标题完全命中公式：**数字（116个）+ 利益（免费）+ 痛点（AI提示词）**
+- 文章与项目发布时间高度同步，踩中流量窗口
+
+### 后续 Cron 文章质量下降的根因分析
+- **核心原因**：Cron 任务的 skills 列表缺少 ai-zhiguanju skill
+- 没有 [[wechat-writing-style]] 硬性检查约束，导致：
+  - 标题平淡无冲突
+  - 段落过长（3-5句）
+  - AI 腔严重
+- **修复方案**：确保 Cron 任务加载公众号写作领域知识 + 强制走 5 项检查清单
 

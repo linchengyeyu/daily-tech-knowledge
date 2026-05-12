@@ -328,3 +328,52 @@
   - entities/ai-zhiguanju.md — 新增yao-open-prompts文章与自动回复配置（2026-05-09）
   - index.md — 新增2条目，Total pages: 57→59
 - 关键知识点：yao-open-prompts三天爆火说明中文AI提示词需求旺盛、公众号自动回复配合GitHub仓库做资料引流、ai-toolkit仓库作为公众号回复下载站
+
+## [2026-05-11] ingest | 每日知识回收（回收 2026-05-10 对话）
+- 回收 5 个会话的知识点（AIHOT信源工具、Mirage项目调研、Cron文章质量修复、公众号写作硬性检查、每日知识cron）
+- 新建页面：
+  - entities/aihot.md — AI信源聚合工具，160+信源，数字生命卡兹克开源，API免费
+  - entities/mirage.md — 统一虚拟文件系统（strukto-ai），1701⭐，TypeScript，Apache 2.0
+- 更新页面：
+  - concepts/wechat-writing-style.md — 新增5项硬性检查清单（2026-05-10总结），扩展为强制门禁
+  - entities/ai-zhiguanju.md — 新增AIHOT信源集成记录、Mirage文章尝试、Cron质量修复记录
+  - index.md — 新增2条目，Total pages: 59→61
+- 关键知识点：
+  1. AIHOT信源工具：160+信源抓取AI动态，API需浏览器UA，Cron 8:30推飞书
+  2. Mirage项目：4天1701⭐，Issues #16并发隔离 #15 Snapshot限制，核心贡献者zechengz
+  3. Cron质量修复根因：skills列表缺少ai-zhiguanju，导致生成内容缺领域知识
+  4. 写作5项硬性检查：标题冲突/一段两句/证据截图/不像AI/有争议点
+
+## [2026-05-12] update | 每日知识回收（回收 2026-05-11 对话）
+- 回收 gpt2api (KleinAI) 部署调试深度知识
+- 更新页面：
+  - entities/gpt2api.md — 新增 Mock Mode Bug、Docker容器代理配置、端口表、Provider Factory代码位置、未解决问题
+- 新建页面：
+  - entities/proxytunnel.md — Nextin Chrome代理扩展，utun4 VPN隧道，7890端口
+- 更新：index.md（新增1条目，Total pages: 61→62），log.md（本条记录）
+- 关键知识点：
+  1. Mock Mode Bug：dev-full 的 YAML anchor 优先级高于 server，导致 provider 全为 mock
+  2. Docker 容器代理：daemon 代理只影响 pull，容器运行时需手动配置 HTTP_PROXY/HTTPS_PROXY
+  3. ProxyTunnel：Chrome 扩展创建 utun4 隧道，7890 端口，容器通过 host IP 访问
+  4. FlareSolverr 502、ChatGPT token 过期等未解决问题
+
+## [2026-05-13] ingest | 每日知识回收（回收 2026-05-12 对话）
+- 回收 3 个会话的知识点（CLI爆款复盘 + 飞书gpt2api调试 + AIHOT速报）
+- 新建页面：
+  - entities/chatgpt-5-5-pro.md — OpenAI 高端模型，解决菲尔兹奖级别数学题
+  - entities/deepseek-v4-pro.md — DeepSeek V4 Pro 推理模型排行榜第一
+  - entities/anthropic-valuation.md — Anthropic 估值动态，2026-05-12 达1.4万亿
+  - concepts/small-model-orchestration.md — 小模型指挥大模型（AI权力倒挂）范式
+- 更新页面：
+  - entities/gpt2api.md — 新增 2026-05-12 飞书会话记录（mock mode/proxy 继续调试）
+  - entities/yao-open-prompts.md — 新增爆款文章写作经验回顾、cron 质量下降根因分析
+  - entities/aihot.md — 新增 2026-05-12 AIHOT 速报精选4条动态
+  - concepts/wechat-content-strategy.md — 新增「116个免费中文AI提示词」爆款复盘、cron 质量问题根因
+- 更新：index.md（新增4条目，Total pages: 62→66），log.md（本条记录）
+- 关键知识点：
+  1. ChatGPT 5.5 Pro 解菲尔兹奖级别数学题，AI 数学推理重大突破
+  2. Anthropic 估值达1.4万亿，AI安全导向公司获资本市场高度认可
+  3. 7B模型指挥大模型成为新范式，成本/延迟/隐私全面优于传统架构
+  4. DeepSeek V4 Pro 推理排行榜第一，中国 AI 模型竞争力领先
+  5. 「116个免费中文AI提示词」爆款复盘：标题公式+热点同步+流量窗口
+  6. Cron 文章质量下降根因：缺少 ai-zhiguanju skill 导致无领域知识约束

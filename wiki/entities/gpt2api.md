@@ -1,10 +1,10 @@
 ---
 title: gpt2api (KleinAI)
 created: 2026-05-06
-updated: 2026-05-11
+updated: 2026-05-13
 type: entity
 tags: [ai-tool, deployment, api-gateway, automation]
-sources: [session 2026-05-05 weixin, session 2026-05-11 weixin]
+sources: [session 2026-05-05 weixin, session 2026-05-11 weixin, feishu/2026-05-12]
 ---
 
 # gpt2api (KleinAI)
@@ -89,6 +89,13 @@ sources: [session 2026-05-05 weixin, session 2026-05-11 weixin]
 ## Provider Factory 代码位置
 
 - `backend/internal/provider/factory/factory.go`
+
+## 2026-05-12 飞书会话记录（session 20260512_181055）
+
+继续调试 gpt2api 的 mock mode 和 proxy 问题：
+- 确认 Mock Mode 在 dev-full → server 切换后的配置一致性
+- 验证容器运行时代理（HTTP_PROXY/HTTPS_PROXY）的实际连通性
+- ChatGPT session token 的有效性检查
 
 ## 未解决问题
 

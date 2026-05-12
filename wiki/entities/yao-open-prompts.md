@@ -1,10 +1,10 @@
 ---
 title: yao-open-prompts
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-13
 type: entity
 tags: [ai-tool, prompt-engineering, chinese, github-trending]
-sources: [conversation/2026-05-09]
+sources: [conversation/2026-05-09, session/20260512_203032]
 ---
 
 # yao-open-prompts
@@ -35,6 +35,24 @@ GitHub 热门中文 AI 提示词库，3 天爆火获得 1392⭐。
 
 - 5月9日基于此项目撰写公众号文章，已上传至草稿箱
 - 文章方向：向AI小白推荐优质中文提示词资源
+
+## 爆款文章写作经验回顾（2026-05-12 CLI session）
+
+基于「116个免费中文AI提示词」爆款文章的回顾分析：
+
+### 爆款原因分析
+- 标题公式生效：数字（116个）+ 利益（免费）+ 痛点（AI提示词），完全符合 [[wechat-content-strategy]] 的标题公式
+- yao-open-prompts 项目本身3天爆火，自带热点属性
+- 文章与项目发布时间高度同步，踩中流量窗口
+
+### 后续 cron 文章质量下降的根因
+- **缺少 ai-zhiguanju skill**：cron 任务生成文章时未加载公众号写作领域知识
+- 没有 [[wechat-writing-style]] 的硬性检查约束
+- 导致后续生成的文章标题平淡、段落过长、AI 腔重
+
+### 公众号写作风格要点重申
+- 详见 [[wechat-writing-style]] 的 5 项硬性检查清单
+- 核心教训：爆款可复制，但必须每次都严格走检查清单
 
 ## 相关
 
