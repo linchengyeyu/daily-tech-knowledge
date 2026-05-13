@@ -377,3 +377,21 @@
   4. DeepSeek V4 Pro 推理排行榜第一，中国 AI 模型竞争力领先
   5. 「116个免费中文AI提示词」爆款复盘：标题公式+热点同步+流量窗口
   6. Cron 文章质量下降根因：缺少 ai-zhiguanju skill 导致无领域知识约束
+
+## [2026-05-14] ingest | 每日知识回收（回收 2026-05-13 对话）
+- 回收 AIHOT 速报 5/13 及用户对话知识点
+- 新建页面：
+  - entities/claude-opus-4-7.md — Anthropic 最新模型，Fast Mode 研究预览，API + Claude Code 双渠道
+  - entities/step-image-edit-2.md — 3.5B 参数图像编辑模型，KRIS-Bench 基准测试第一
+  - entities/google-android-intelligence.md — Google Android AI 智能功能，跨应用多步自动化 + AI 增强鼠标指针
+  - concepts/ai-seeding-note-lawsuit.md — 首例 AI 生成种草笔记诉讼案，工具提供方被判赔 10 万 RMB
+  - concepts/statewright-ai-constraint.md — Statewright 方法论，状态机约束 AI Agent 准确率从 2/10 到 10/10
+- 更新页面：
+  - entities/aihot.md — 新增 2026-05-13 AIHOT 速报精选 5 条动态
+- 更新：index.md（新增5条目，Total pages: 66→71），log.md（本条记录）
+- 关键知识点：
+  1. Claude Opus 4.7 Fast Mode 研究预览发布，Anthropic 持续迭代高端模型矩阵
+  2. Step Image Edit 2 以 3.5B 参数登顶 KRIS-Bench，中等模型专项任务优势
+  3. Google Android Intelligence 将 AI Agent 范式带入移动系统层，跨应用自动化里程碑
+  4. 中国首例 AI 种草笔记诉讼案判决，工具提供方承担法律责任，划清 AI 生成内容法律边界
+  5. Statewright 方法论证明结构化约束（状态机）可将 AI Agent 准确率从 20% 提升到 100%
