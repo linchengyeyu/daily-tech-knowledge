@@ -1,10 +1,10 @@
 ---
 title: 飞书 Bot 白名单配置
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-16
 type: concept
 tags: [deployment, best-practice, automation]
-sources: [conversation/2026-04-29]
+sources: [conversation/2026-04-29, conversation/2026-05-15]
 ---
 
 # 飞书 Bot 白名单配置
@@ -66,3 +66,29 @@ FEISHU_ALLOW_ALL_USERS=true
 
 - [[hermes-agent]] — 飞书是 Hermes 的集成渠道之一
 - [[deepseek-protocol-compatibility]] — 另一个"静默失败"的配置陷阱案例
+
+## 全员共享配置（2026-05-15）
+
+### FEISHU_ALLOW_ALL_USERS=true
+
+将飞书 Bot 对企业内所有用户开放：
+
+```bash
+FEISHU_ALLOW_ALL_USERS=true
+```
+
+### 飞书应用发布到企业工作台
+
+- **应用 ID**：`cli_a96e813225785cdd`
+- 发布到飞书企业工作台后，企业内所有成员均可搜索并使用 Bot
+- **配对机制保留**：新用户首次使用仍需配对码，管理员通过以下命令批准：
+
+```bash
+hermes pairing approve feishu <code>
+```
+
+### 注意事项
+
+- 全员开放适合测试和企业内部使用，不建议对公开放
+- 配对码机制确保只有经过批准的用户才能实际使用 Agent
+- 发布新版本需在飞书开放平台操作「创建版本」→「申请发布」

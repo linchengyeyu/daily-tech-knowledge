@@ -1,10 +1,10 @@
 ---
 title: Hermes Agent
 created: 2026-04-22
-updated: 2026-05-09
+updated: 2026-05-16
 type: entity
 tags: [ai-tool, agent, automation]
-sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01, conversation/2026-05-04, conversation/2026-05-07, conversation/2026-05-08]
+sources: [raw/articles/linyuebanzi-hermes-llm-wiki-skill-2026.md, raw/articles/keji-jun-hermes-config-guide-2026.md, conversation/2026-04-26, conversation/2026-04-29, conversation/2026-04-30, conversation/2026-05-01, conversation/2026-05-04, conversation/2026-05-07, conversation/2026-05-08, conversation/2026-05-15]
 ---
 
 # Hermes Agent
@@ -249,5 +249,40 @@ Anthropic 发布的"Dreaming"功能：Agent 从历史 session 自动学习。无
 - Agent 自学习（Dreaming）是未来趋势，[[hindsight-memory]] 是 Hermes 生态的对应方案
 - 质量评分（Outcomes）理念与 [[wechat-article-scoring]] 的八维度评分异曲同工
 - 本地推理趋势：[[ds4]]（Metal推理）、[[litert-lm]]（端侧推理）
+
+## 模型切换修复（2026-05-15）
+
+### 问题
+
+`/model` 命令只更新 `model.default` 字段，不同步 `base_url`、`api_key`、`context_length`，导致切换到自定义 provider 模型后调用失败。
+
+### 解决方案
+
+- 创建 `switch_model.py` 脚本：从 `custom_providers` 配置中复制完整元数据到当前生效配置
+- 配置 shell alias `switch` 命令简化操作：`switch <model-name>`
+- 切换后需**重启 session** 才能生效
+- 详见 → [[model-switching-workflow]]
+
+## 飞书全员共享（2026-05-15）
+
+### 配置
+
+```bash
+FEISHU_ALLOW_ALL_USERS=true
+```
+
+设置为 true 后，飞书 Bot 对企业内所有用户开放，无需逐个添加白名单。配对机制保留，新用户首次使用仍需配对码批准。
+
+### 飞书应用发布流程
+
+- 应用 ID：`cli_a96e813225785cdd`
+- 发布到企业工作台后，全员可见可用
+- 配对码批准命令：
+
+```bash
+hermes pairing approve feishu <code>
+```
+
+- 详见 → [[feishu-bot-configuration]]
 
 
