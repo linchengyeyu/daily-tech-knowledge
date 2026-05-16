@@ -395,3 +395,38 @@
   3. Google Android Intelligence 将 AI Agent 范式带入移动系统层，跨应用自动化里程碑
   4. 中国首例 AI 种草笔记诉讼案判决，工具提供方承担法律责任，划清 AI 生成内容法律边界
   5. Statewright 方法论证明结构化约束（状态机）可将 AI Agent 准确率从 20% 提升到 100%
+
+## [2026-05-16] ingest | 每日知识回收（回收 2026-05-15 对话）
+- 回收 2026-05-15 对话的知识点
+- 主要话题：
+  1. ima2-gen 项目调研：ChatGPT 网页生图 API 封装工具（lidge-jun/ima2-gen, ⭐213）
+  2. 3DCellForge 项目调研：AI 3D 模型生成工具（huangserva/3DCellForge, ⭐2058）
+  3. Hermes 模型切换修复：/model 命令只改 model.default 不改 base_url/api_key/context_length，创建 switch_model.py 脚本解决
+  4. 飞书全员共享：FEISHU_ALLOW_ALL_USERS=true，应用发布到企业工作台（cli_a96e813225785cdd），配对机制保留
+- 新建页面：
+  - entities/ima2-gen.md — ChatGPT 网页生图 API 封装工具，gpt-image-2 本地 API
+  - entities/3dcellforge.md — AI 3D 模型生成工具，React+Three.js，多 provider 支持
+  - concepts/model-switching-workflow.md — Hermes 模型切换工作流（/model 缺陷与 switch_model.py 方案）
+- 更新页面：
+  - entities/hermes-agent.md — 新增模型切换修复（2026-05-15）、飞书全员共享配置
+  - concepts/feishu-bot-configuration.md — 新增 FEISHU_ALLOW_ALL_USERS=true 配置、飞书应用发布流程、配对码批准命令
+- 更新：index.md（新增3条目，Total pages: 71→75），log.md（本条记录）
+- 关键知识点：
+  1. ima2-gen 将 ChatGPT gpt-image-2 封装为本地 API，常见失败：OAuth 过期/额度限流/Cloudflare 403/SSE 解析失败
+  2. 3DCellForge 支持 Hyper3D/Tripo/Fal.ai/Hunyuan3D 四个 provider，上传图片生成 3D 模型
+  3. /model 命令只更新 model.default，switch_model.py 从 custom_providers 复制完整元数据，需重启 session 生效
+  4. FEISHU_ALLOW_ALL_USERS=true 开放全员使用，配对码机制仍保留控制
+
+## [2026-05-17] ingest | 每日知识回收（回收 2026-05-16 AIHOT 速报）
+- 回收 AIHOT 2026-05-16 速报精选内容
+- 新建页面：
+  - entities/lark-cli.md — 飞书开源命令行工具，45天GitHub破万星，AI可通过CLI操作飞书
+  - entities/anthropic-valuation-2026.md — Anthropic估值3个月飙升至$900B，ARR达$45B
+- 更新页面：
+  - entities/aihot.md — 新增 2026-05-16 速报精选内容，补充 API 字段说明（无 score 字段，mode=selected 即精选）
+- 更新：index.md（新增2条目，Total pages: 75→77），log.md（本条记录）
+- 关键知识点：
+  1. 飞书 Lark CLI 开源45天破万星，国内首个破万星办公套件开源项目，允许AI命令行操作飞书
+  2. Lark CLI 与 MCP 模式形成对比：可见可控 vs 云端黑盒
+  3. Anthropic 估值3个月飙升至 $900B，ARR $45B，企业级AI商业化能力极强
+  4. AIHOT API 确认无 score 字段，mode=selected 即精选内容

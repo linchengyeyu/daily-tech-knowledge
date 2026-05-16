@@ -2,7 +2,7 @@
 
 > 内容目录。所有 Wiki 页面按类型分类，每条一行：wikilink + 摘要。
 > 查询前先读这里找相关页面。
-> Last updated: 2026-05-14 | Total pages: 71
+> Last updated: 2026-05-17 | Total pages: 77
 
 ## Entities
 - [[hermes-agent]] — Nous Research 的 AI Agent 平台，内置 skill 系统，支持满配五大模块
@@ -53,6 +53,10 @@
 - [[claude-opus-4-7]] — Anthropic 最新模型，Fast Mode 研究预览，API + Claude Code 双渠道
 - [[step-image-edit-2]] — 3.5B 参数图像编辑模型，KRIS-Bench 基准测试第一
 - [[google-android-intelligence]] — Google Android AI 智能功能，跨应用多步自动化 + AI 增强鼠标指针
+- [[ima2-gen]] — ChatGPT网页生图API封装工具，gpt-image-2本地API，常见失败原因
+- [[3dcellforge]] — AI 3D模型生成工具，React+Three.js，支持Hyper3D/Tripo/Fal.ai/Hunyuan3D多provider
+- [[lark-cli]] — 飞书开源命令行工具，45天GitHub破万星，允许AI通过CLI直接操作飞书（可见可控 vs MCP黑盒）
+- [[anthropic-valuation-2026]] — Anthropic估值3个月飙升至$900B，ARR达$45B
 
 ## Concepts
 - [[cloudflare-tunnel]] — Cloudflare 免费内网穿透方案，含国内加速配置
@@ -76,6 +80,7 @@
 - [[small-model-orchestration]] — 小模型指挥大模型（AI权力倒挂）：7B模型做规划，大模型做执行
 - [[ai-seeding-note-lawsuit]] — 首例AI生成种草笔记诉讼案，工具提供方被判赔10万RMB，法律边界
 - [[statewright-ai-constraint]] — Statewright方法论：状态机约束AI Agent，准确率从2/10提升到10/10
+- [[model-switching-workflow]] — Hermes模型切换工作流：/model命令缺陷与switch_model.py解决方案
 
 ## Comparisons
 - [[wechat-image-generation-comparison]] — 免费AI配图服务对比：Pollinations vs xinghe-image等
